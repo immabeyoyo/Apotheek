@@ -97,15 +97,23 @@ nav a:hover {
   background-color: #ddd;
   color: black;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
 
 .praktijkOndersteuner {
+  background-color: lightgray;
   display: flex;
   flex-direction: row;
+  margin: 1%;
+  padding: 1%;
 }
 
 .praktijkOndersteuner img {
-height: 200px;
-width: auto;
+  height: 200px;
+  width: auto;
 }
 
 .praktijkOndersteuner p {
@@ -113,16 +121,20 @@ width: auto;
   margin-top: auto;
   margin-bottom: auto;
   height: 200px;
+  margin-left: 2%;
 }
 
 .voorlichtingEen {
+  background-color: lightgray;
   display: flex;
   flex-direction: row;
+  margin: 1%;
+  padding: 1%;
 }
 
 .voorlichtingEen img {
-height: 200px;
-width: auto;
+  height: 200px;
+  width: auto;
 }
 
 .voorlichtingEen p {
@@ -130,16 +142,20 @@ width: auto;
   margin-top: auto;
   margin-bottom: auto;
   height: 200px;
+  margin-right: 2%;
 }
 
 .voorlichtingTwee {
+  background-color: lightgray;
   display: flex;
   flex-direction: row;
+  margin: 1%;
+  padding: 1%;
 }
 
 .voorlichtingTwee img {
-height: 200px;
-width: auto;
+  height: 200px;
+  width: auto;
 }
 
 .voorlichtingTwee p {
@@ -147,4 +163,5 @@ width: auto;
   margin-top: auto;
   margin-bottom: auto;
   height: 200px;
+  margin-left: 2%;
 }
