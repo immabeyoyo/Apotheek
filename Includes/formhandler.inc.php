@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   try {
       require_once "dbh.inc.php";
 
-      $query = "INSERT INTO users (username, pwd, email) VALUES (:username, :pwd, :email);";
+      $query = "INSERT INTO gebruiker (username, pwd, email) VALUES (:username, :pwd, :email);";
 
       $stmt = $pdo->prepare($query);
 
@@ -21,11 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $pdo = null;
       $stmt = null;
 
-      header("Location: ../index.php");
+      header("Location: ../Inschrijven/inschrijven.html");
       die();
   } catch (PDOException $e) {
     die("Query failed: " . $e->getMessage());
   }
 } else {
-  header("Location: ../index.php");
+  header("Location: ../Inschrijven/inschrijven.html");
 }
